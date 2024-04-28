@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/brown">
+
+    <!-- Switch untuk beralih antara mode Bahasa Toraja dan Bahasa Indonesia -->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Toraja-Indonesia"
+        android:checked="true"
+        android:textOff="Toraja-Indonesia"
+        android:textOn="Indonesia-Toraja"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:thumbTint="@color/black"
+        android:trackTint="@color/grey"/>
+
+    <!-- EditText untuk memasukkan kata dalam bahasa Toraja atau Indonesia -->
+    <EditText
+        android:id="@+id/editTextKataToraja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchLanguage"
+        android:layout_marginTop="8dp"
+        android:hint="Masukkan Kata Dalam Bahasa Toraja"
+        android:inputType="text"
+        android:textStyle="italic"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/black"/>
+
+    <!-- Tombol untuk memulai pencarian atau terjemahan -->
+
+    <!-- ListView untuk menampilkan daftar kamus -->
+
+    <!-- TextView untuk menampilkan hasil pencarian atau terjemahan -->
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKataToraja"
+        android:layout_alignEnd="@id/editTextKataToraja"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="Cari" />
+
+    <ListView
+        android:id="@+id/listViewKamus"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:padding="8dp"/>
+
+    <!-- Tombol untuk menutup hasil pencarian atau terjemahan -->
+    <Button
+        android:id="@+id/btnCloseResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSearchResult"
+        android:layout_marginTop="8dp"
+        android:text="Tutup"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Tombol untuk menambah kata ke kamus -->
+    <Button
+        android:id="@+id/tambahKataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Tambah Kata"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "975313098365",
+    "project_id": "kamustoraya",
+    "storage_bucket": "kamustoraya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975313098365:android:0b6f2eed1ac9af28a18314",
+        "android_client_info": {
+          "package_name": "com.example.kamustoraya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT82aKno-gI_rQFp2YDI2etyoFEVjkOvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975313098365:android:2d0d7f0b59b996e0a18314",
+        "android_client_info": {
+          "package_name": "id.kamus.toraya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT82aKno-gI_rQFp2YDI2etyoFEVjkOvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
